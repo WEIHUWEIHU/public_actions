@@ -28,6 +28,7 @@ const headers = {
 
 // 抽奖
 const drawFn = async () => {
+  await sleep(Math.ceil(Math.random()*600)*1000);
   // 查询今日是否有免费抽奖机会
   const today = await fetch('https://api.juejin.cn/growth_api/v1/lottery_config/get', {
     headers,
@@ -53,7 +54,7 @@ const drawFn = async () => {
 
 // 签到
 (async () => {
-  await sleep(300000);
+  await sleep(Math.ceil(Math.random()*600)*1000);
   
   // 查询今日是否已经签到
   const today_status = await fetch('https://api.juejin.cn/growth_api/v1/get_today_status', {
@@ -64,7 +65,7 @@ const drawFn = async () => {
 
   if (today_status.err_no !== 0) return Promise.reject('签到失败！');
   if (today_status.data) return Promise.resolve('今日已经签到！');
-
+  await sleep(Math.ceil(Math.random()*600)*1000);
   // 签到
   const check_in = await fetch('https://api.juejin.cn/growth_api/v1/check_in', {
     headers,
