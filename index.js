@@ -53,7 +53,7 @@ const drawFn = async () => {
 
 // 签到
 (async () => {
-  await sleep(60000);
+  await sleep(300000);
   
   // 查询今日是否已经签到
   const today_status = await fetch('https://api.juejin.cn/growth_api/v1/get_today_status', {
