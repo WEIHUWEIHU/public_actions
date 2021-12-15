@@ -6,6 +6,14 @@ process.env.user = user;
 process.env.pass = pass;
 let score = 0;
 
+function sleep(time) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve();
+    }, time);
+  });
+};
+
 const headers = {
   'content-type': 'application/json; charset=utf-8',
   'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
@@ -45,6 +53,8 @@ const drawFn = async () => {
 
 // 签到
 (async () => {
+  await sleep(60000);
+  
   // 查询今日是否已经签到
   const today_status = await fetch('https://api.juejin.cn/growth_api/v1/get_today_status', {
     headers,
