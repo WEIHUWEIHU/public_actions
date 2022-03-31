@@ -116,4 +116,4 @@ const drawFn = async () => {
         <p style="text-indent: 2em">当前积分：${score}</p><br/>
       `
     }).catch(console.error);
-  });
+  }); 
