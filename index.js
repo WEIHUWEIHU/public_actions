@@ -99,6 +99,7 @@ const drawFn = async () => {
         <h1 style="text-align: center">自动签到通知</h1>
         <p style="text-indent: 2em">签到结果：${msg}</p>
         <p style="text-indent: 2em">当前积分：${score}</p><br/>
+        <p style="text-indent: 2em">掘金链接：</p><a>https://juejin.cn/user/center/lottery?from=lucky_lottery_menu_bar</a><br/>
       `
     }).catch(console.error);
   })
@@ -114,6 +115,7 @@ const drawFn = async () => {
         <h1 style="text-align: center">自动签到通知</h1>
         <p style="text-indent: 2em">执行结果：${err}</p>
         <p style="text-indent: 2em">当前积分：${score}</p><br/>
+        <p style="text-indent: 2em">掘金链接：</p><a>https://juejin.cn/user/center/lottery?from=lucky_lottery_menu_bar</a><br/>
       `
     }).catch(console.error);
   }); 
