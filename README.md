@@ -9,7 +9,7 @@
 打开浏览器，登陆掘金，F12 查看 Network 面板，复制 cookie
 
 打开 github 仓库的 Setting，选择 Secrets，新建下列 4 个仓库 Secret
-| key | value |
+| key | value  |  
 | --- | ---|
 | COOKIE | 值为上面复制掘金的 cookie |
 | USER | 发送邮件的邮箱地址，该邮箱需要开启 SMTP |
