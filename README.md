@@ -11,7 +11,7 @@
 打开 github 仓库的 Setting，选择 Secrets，新建下列 4 个仓库 Secret
 | key | value  |  
 | --- | ---|
-| COOKIE | 值为上面复制掘金的 cookie |
+| COOKIE | 值为上面复制掘金的 cookie |  
 | USER | 发送邮件的邮箱地址，该邮箱需要开启 SMTP |
 | PASS | 该邮箱的 SMTP 密码 |
 | TO | 接收邮件的邮箱 |
