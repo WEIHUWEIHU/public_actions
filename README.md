@@ -7,7 +7,7 @@
 
 使用方法：fork 本仓库。 
 
-打开浏览器，登陆掘金，F12   查看 Network 面板，复制cookie
+打开浏览器，登陆掘金，F12   查看 Network 面板，复制 cookie
 
 打开 github 仓库的 Setting，  选择 Secrets，新建下列  4  个仓库 Secret
 | key | value  |  
